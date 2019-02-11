@@ -1,7 +1,7 @@
 class Raindrop:
     
     speed = 1
-    diameter = 25
+    diameter = 10
     c = color(0,0,255)
     
     def __init__(self, x, y, team):

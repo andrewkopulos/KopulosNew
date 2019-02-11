@@ -18,13 +18,13 @@ def setup():
     sprites.append(Enemy(50, 50, enemyTeam))
     sprites.append(Raindrop(50, 50, enemyTeam))
     sprites.append(Raindrop(150, 150, enemyTeam))
-    sprites.append(Raindrop(200, 200, enemyTeam))
+    sprites.append(Raindrop(300, 300, enemyTeam))
     sprites.append(Raindrop(100, 100, enemyTeam))
     sprites.append(Raindrop(175, 175, enemyTeam))
     sprites.append(Raindrop(70, 70, enemyTeam))
     sprites.append(Raindrop(120, 120, enemyTeam))
     sprites.append(Raindrop(140, 140, enemyTeam))
-    sprites.append(Raindrop(250, 250, enemyTeam))
+    sprites.append(Raindrop(0, 250, enemyTeam))
     sprites.append(Raindrop(275, 275, enemyTeam))
     
                            
