@@ -4,6 +4,8 @@ from Enemy import Enemy
 from Player import Player
 from SpriteManager import sprites
 from Raindrop import Raindrop
+from JiggleBot import JiggleBot
+from ScreenSaverBot import ScreenSaverBot
 
 def setup():
     print "Built with Processing Python version " + platform.python_version()
@@ -26,8 +28,8 @@ def setup():
     sprites.append(Raindrop(140, 140, enemyTeam))
     sprites.append(Raindrop(0, 250, enemyTeam))
     sprites.append(Raindrop(275, 275, enemyTeam))
-    
-                           
+    sprites.append(JiggleBot(width/2, height/2, enemyTeam))
+    sprites.append(ScreenSaverBot(0, 0, enemyTeam))                           
 def draw():
     global player, sprites
     background(255)    

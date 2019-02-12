@@ -14,8 +14,8 @@ class Player:
     
     # constructor
     def __init__(self, x, y, team):
-        self.x = x
-        self.y = y
+        self.x = width/2
+        self.y = height
         self.team = team
         
     # instance methods
