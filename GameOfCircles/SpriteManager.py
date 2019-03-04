@@ -23,10 +23,10 @@ def animate():
     for sprite in sprites:
         sprite.animate()
     checkCollisions()
-    bringOutTheDead()
+    bringOutYerDead()
     
 def checkCollisions():
-    for i range(0, len(sprites)):
+    for i in range(0, len(sprites)):
         for j in range(i + 1, len(sprites)):
             a = sprites[i]
             b = sprites[j]
