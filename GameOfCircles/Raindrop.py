@@ -1,4 +1,6 @@
-class Raindrop:
+from Sprite import Sprite
+
+class Raindrop(Sprite):
     
     speed = 1
     diameter = 10

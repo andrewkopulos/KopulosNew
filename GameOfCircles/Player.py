@@ -1,27 +1,32 @@
-from SpriteManager import sprites
+import SpriteManager
+
+from Sprite import Sprite
 from Bullet import Bullet
 
-class Player:
+class Player(Sprite):
     
     # instance variables
     left = False
     right = False
     up = False
     down = False
-    speed = 5
+    speed = 4
     diameter = 50
     c = color(255,0,0)
     
     # constructor
     def __init__(self, x, y, team):
-        self.x = width/2
-        self.y = height
+        self.x = x
+        self.y = y
         self.team = team
         
     # instance methods
     def display(self):
         fill(self.c)
         ellipse(self.x, self.y, self.diameter, self.diameter)
+        
+    def handleCollision(self):
+        pass
         
     def move(self):
         if self.left:

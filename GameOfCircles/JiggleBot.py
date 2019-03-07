@@ -1,4 +1,7 @@
-class JiggleBot:
+from Sprite import Sprite
+
+class JiggleBot(Sprite):
+
     speed = 4
     diameter = 50
     c = color(100,100,255)
