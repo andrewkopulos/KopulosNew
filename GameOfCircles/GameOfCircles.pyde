@@ -10,7 +10,6 @@ import SpriteManager
 
 def setup():
     print "Built with Processing Python version" + platform.python_version()
-    
     global player, sprites
     size(500,500)
     playerTeam = 1

@@ -1,5 +1,4 @@
 from Sprite import Sprite
-
 class JiggleBot(Sprite):
 
     speed = 4

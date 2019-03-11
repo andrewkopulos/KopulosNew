@@ -1,13 +1,11 @@
 from Sprite import Sprite
 from Bullet import Bullet
 from Player import Player
-
 import SpriteManager
-
 class Enemy(Sprite):
     
     speed = 3
-    diameter = 50
+    diameter = 40
     c = color(0,0,255)
     mark = 0
     wait = 1000
@@ -23,11 +21,11 @@ class Enemy(Sprite):
             
     def aim(self, target):
         d = ((self.x - target.x)**2 + (self.y - target.y)**2)**.5
-        xComp = target.x - self.x
-        yComp = target.y - self.y
-        xVec = xComp/2 * .1
-        yVec = yComp/2 * .1
-        return PVector(xVec, yVec)
+        xComponent = target.x - self.x
+        yComponent = target.y - self.y
+        xVector = xComponent/2 * .1
+        yVector = yComponent/2 * .1
+        return PVector(xVector, yVector)
     
     def fire(self, vector):
         if(millis() - self.mark > self.wait):
