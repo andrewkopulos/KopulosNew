@@ -23,8 +23,8 @@ class Player(Sprite):
         fill(self.c)
         ellipse(self.x, self.y, self.diameter, self.diameter)
         
-    def handleCollision(self):
-        pass
+    #def handleCollision(self):
+        #pass
         
     def move(self):
         if self.left:
@@ -47,7 +47,7 @@ class Player(Sprite):
         
     def keyDown(self):
         if key == 'f' or key == 'F':
-            sprites.append(Bullet(self.x, self.y, PVector(0, -10), self.team))
+            sprite.append(Bullet(self.x, self.y, PVector(0, -10), self.team))
     
         if keyCode == LEFT:
             self.left = True

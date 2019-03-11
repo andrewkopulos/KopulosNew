@@ -4,7 +4,7 @@ from Player import Player
 import SpriteManager
 class Enemy(Sprite):
     
-    speed = 3
+    speed = 2
     diameter = 40
     c = color(0,0,255)
     mark = 0
@@ -23,8 +23,9 @@ class Enemy(Sprite):
         d = ((self.x - target.x)**2 + (self.y - target.y)**2)**.5
         xComponent = target.x - self.x
         yComponent = target.y - self.y
-        xVector = xComponent/2 * .1
-        yVector = yComponent/2 * .1
+        magnitude = 3
+        xVector = xComponent/d * magnitude
+        yVector = yComponent/d * magnitude
         return PVector(xVector, yVector)
     
     def fire(self, vector):
